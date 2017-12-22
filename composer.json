@@ -1,0 +1,24 @@
+{
+    "name": "freedomfly/laravelWebhook",
+    "description": "auto deploy test environment by webhook push from gitos github",
+    "license": "MIT",
+    "keywords": ["laravel", "webhook", "gitos", "gihub"],
+    "authors": [
+        {
+            "name": "flyspring",
+            "email": "walktospring@qq.com",
+            "homepage": ""
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "laravel": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlySpring\\LaravelWebhook\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
