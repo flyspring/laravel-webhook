@@ -1,5 +1,5 @@
 {
-    "name": "freedomfly/laravelWebhook",
+    "name": "flyspring/laravel-webhook",
     "description": "auto deploy test environment by webhook push from gitos github",
     "license": "MIT",
     "keywords": ["laravel", "webhook", "gitos", "gihub"],
