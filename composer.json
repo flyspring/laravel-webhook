@@ -4,6 +4,7 @@
     "keywords": ["laravel", "webhook", "gitos", "gihub"],
     "license": "MIT",
     "type": "project",
+	"minimum-stability": "stable",
 	"authors": [
         {
             "name": "flyspring",
