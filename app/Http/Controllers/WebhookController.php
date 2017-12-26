@@ -44,7 +44,7 @@ class WebhookController extends Controller
         }
         
         //插入更新队列
-        $this->dispatch(new UpdateProject($project));
+        $this->dispatch((new UpdateProject($project))->onQueue('webhook-push'));
         
         return 'success';
     }

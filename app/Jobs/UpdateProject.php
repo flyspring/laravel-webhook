@@ -46,8 +46,8 @@ class UpdateProject implements ShouldQueue
                });
                
         if (!$runner->isSuccessful()) {
-            $this->logError($runner->getErrorOutput());
-            $this->logError($runner->getScript());
+            $this->logError($output. '---' . $runner->getErrorOutput());
+            //$this->logError($runner->getScript());
         } else {
             $this->logInfo('success');
         }      

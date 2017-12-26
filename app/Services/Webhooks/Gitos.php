@@ -55,8 +55,9 @@ class Gitos implements WebhookInterface
             return false;
         }
         
+        $url = $this->getGitUrl($arrProject['git_http_url']);
         $path = $this->getPath($projectName);
         $commitId = $input['after'];
-        return new Project($projectName, $commitId, $path, $branch);
+        return new Project($projectName, $commitId, $path, $branch, $url);
     }
 }

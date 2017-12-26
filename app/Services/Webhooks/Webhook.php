@@ -40,4 +40,18 @@ trait Webhook
     {
         return isset($this->projects[$projectName]);
     }
+    
+    /**
+     * 获取可以访问的giturl
+     * @param string $url
+     */
+    public function getGitUrl($url)
+    {
+        if (empty($this->config['usermail']) || empty($this->config['password'])) {
+            return $url;
+        }
+        
+        $replace = 'https://' . urlencode($this->config['usermail']) . ':' . urlencode($this->config['password']) . '@';
+        return str_replace('https://', $replace, $url);
+    }
 }

@@ -10,13 +10,14 @@ class Project
 {
     private $attributes;
     
-    public function __construct($name, $commitId, $path, $branch)
+    public function __construct($name, $commitId, $path, $branch, $url)
     {
         $this->attributes = [
             'name' => $name,
             'commit_id' => $commitId,
             'path' => $path,
-            'branch' => $branch
+            'branch' => $branch,
+            'url' => $url
         ];
     }
     

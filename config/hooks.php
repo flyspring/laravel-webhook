@@ -12,19 +12,19 @@ return [
     */
 
     'projects' => [
-        'project1' => [
+        'guiheAdmin' => [
             'branch' => 'dev',
-            'path' => '/var/www/project1/',
+            'path' => '/home/www/guiheAdmin/',
         ],
         
-        'project2' => [
+        'guiheDoctor' => [
             'branch' => 'master',
-            'path' => '/var/www/project2/',
+            'path' => '/home/www/guiheDoctor/',
         ],
         
-        'project3' => [
+        'guihePatient' => [
             'branch' => 'master',
-            'path' => '/var/www/project3/',
+            'path' => '/home/www/guihePatient/',
         ],
     ],
 
@@ -41,11 +41,15 @@ return [
 
     'hooks' => [
         'gitos' => [
-            'secret' => 'githook' //开源中国的项目秘钥
+            'secret' => 'githook135',
+            'usermail' => env('GIT_USER_MAIL', ''),
+            'password' => env('GIT_PASSWORD', '')
         ],
 
         'github' => [
             'secret' => '',
+            'usermail' => '',
+            'password' => ''
         ],
     ],
 
